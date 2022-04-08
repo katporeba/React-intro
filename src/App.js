@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// we are importing logo
+// import logo from './logo.svg';
+// we are importing app css
+// import './App.css';
 
-function App() {
+import Header from "./components/Header";
+// import React from "react";
+
+//components can be functions or classes, most people these days use functions with hooks
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className='constainer'>
+        <Header title={1} />
+        {/*  <Header />*/}
+      </div>
+  )
 }
+
+// TODO: function component
+// function App() {
+//       const name ="Brad";
+//       const x = true;
+//       return (
+//           // the difference - className instead of class, for -> htmlFor
+//           //if we don't want a div - then create <> and end with </>
+//           <div className="container">
+//               {/*<h1>Hello from react</h1>*/}
+//               {/*<h2>Hello {1+1} {name} {x ? 'yes' : 'no'} </h2>*/}
+//               <Header />
+//           </div>
+//     );
+// }
+
+// TODO: class component
+// class App extends React.Component {
+//     render() {
+//         return <h1>Hello from a class</h1>
+//     }
+// }
+
 
 export default App;
